@@ -1,0 +1,20 @@
+platform :ios do
+  lane :example do
+    xambuild(
+      platform: "ios",
+      build_configuration: "Release",
+      plist_path: "iOS/Info.plist"
+    )
+  end
+end
+platform :android do
+  lane :example do
+    xambuild(
+      platform: "android",
+      build_configuration: "Release",
+      keystore_path: "my.keystore",
+      keystore_alias: "myalias",
+      keystore_password: ENV["MY_KEYSTORE_PASSWORD"]
+    )
+  end
+end
