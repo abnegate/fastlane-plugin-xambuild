@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fastlane-plugin-xambuild (0.2.0)
+    fastlane-plugin-xambuild (0.2.1)
       fastlane (>= 2.156)
       highline (~> 1.7)
       nokogiri (~> 1.7)
