@@ -1,15 +1,15 @@
 module Xambuild
-  class JavaSignCommandGenerator
+  class JavaSign
     class << self
       def generate
-        build_apk_path = Xambuild.cache[:build_apk_path]
-        Xambuild.cache[:signed_apk_path] = "#{build_apk_path}-unaligned"
+        build_apk_path = CsProj.cache[:build_apk_path]
+        CsProj.cache[:signed_apk_path] = "#{build_apk_path}-unaligned"
 
         parts = prefix
         parts << detect_jarsigner_executable
         parts += options
         parts << build_apk_path
-        parts << Xambuild.config[:keystore_alias]
+        parts << CsProj.config[:keystore_alias]
         parts += pipe
 
         parts
@@ -26,7 +26,7 @@ module Xambuild
       end
 
       def options
-        config = Xambuild.config
+        config = CsProj.config
 
         options = []
         options << "-verbose" if $verbose
@@ -35,7 +35,7 @@ module Xambuild
         options << "-storepass \"#{config[:keystore_password]}\""
         options << "-keystore \"#{config[:keystore_path]}\""
         options << "-tsa #{config[:keystore_tsa]}"
-        options << "-signedjar \"#{Xambuild.cache[:signed_apk_path]}\""
+        options << "-signedjar \"#{CsProj.cache[:signed_apk_path]}\""
 
         options
       end

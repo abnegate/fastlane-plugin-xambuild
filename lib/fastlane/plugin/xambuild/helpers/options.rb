@@ -90,7 +90,7 @@ module Xambuild
                                      env_name: "XAMBUILD_ANDROID_KEYSTORE_PASSWORD",
                                      description: "Password of the keystore",
                                      optional: true),
-        
+
         FastlaneCore::ConfigItem.new(key: :keystore_tsa,
                                      default_value: "http://timestamp.digicert.com",
                                      env_name: "XAMBUILD_ANDROID_KEYSTORE_TSA",

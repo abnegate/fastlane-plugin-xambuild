@@ -5,9 +5,9 @@ require "fastlane/plugin/xambuild/version"
 module Xambuild
   class Manager
     def work(options)
-      Xambuild.config = options
+      CsProj.config = options
 
-      FastlaneCore::PrintTable.print_values(config: Xambuild.config,
+      FastlaneCore::PrintTable.print_values(config: CsProj.config,
                                             hide_keys: [],
                                             title: "Summary for xambuild #{Fastlane::Xambuild::VERSION}")
 

@@ -16,6 +16,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -27,6 +28,9 @@
       <option name="presentableId" value="Default" />
       <updated>1606187832452</updated>
       <workItem from="1606187834483" duration="5430000" />
+      <workItem from="1606264048864" duration="98000" />
+      <workItem from="1606948855135" duration="19357000" />
+      <workItem from="1606978094472" duration="2357000" />
     </task>
     <servers />
   </component>
@@ -34,9 +38,33 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="403" y="145" width="1590" height="1092" key="find.popup" timestamp="1606193076972">
+    <state x="1183" y="471" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606967929717">
       <screen x="35" y="23" width="2525" height="1417" />
     </state>
-    <state x="403" y="145" width="1590" height="1092" key="find.popup/35.23.2525.1417@35.23.2525.1417" timestamp="1606193076972" />
+    <state x="1183" y="471" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/35.23.2525.1417@35.23.2525.1417" timestamp="1606967929717" />
+    <state width="1390" height="386" key="GridCell.Tab.0.bottom" timestamp="1606972652117">
+      <screen x="35" y="23" width="2525" height="1417" />
+    </state>
+    <state width="1390" height="386" key="GridCell.Tab.0.bottom/35.23.2525.1417@35.23.2525.1417" timestamp="1606972652117" />
+    <state width="1390" height="386" key="GridCell.Tab.0.center" timestamp="1606972652116">
+      <screen x="35" y="23" width="2525" height="1417" />
+    </state>
+    <state width="1390" height="386" key="GridCell.Tab.0.center/35.23.2525.1417@35.23.2525.1417" timestamp="1606972652116" />
+    <state width="1390" height="386" key="GridCell.Tab.0.left" timestamp="1606972652116">
+      <screen x="35" y="23" width="2525" height="1417" />
+    </state>
+    <state width="1390" height="386" key="GridCell.Tab.0.left/35.23.2525.1417@35.23.2525.1417" timestamp="1606972652116" />
+    <state width="1390" height="386" key="GridCell.Tab.0.right" timestamp="1606972652117">
+      <screen x="35" y="23" width="2525" height="1417" />
+    </state>
+    <state width="1390" height="386" key="GridCell.Tab.0.right/35.23.2525.1417@35.23.2525.1417" timestamp="1606972652117" />
+    <state x="1261" y="364" key="SettingsEditor" timestamp="1606961248551">
+      <screen x="35" y="23" width="2525" height="1417" />
+    </state>
+    <state x="1261" y="364" key="SettingsEditor/35.23.2525.1417@35.23.2525.1417" timestamp="1606961248551" />
+    <state x="403" y="145" width="1590" height="1092" key="find.popup" timestamp="1606974205175">
+      <screen x="35" y="23" width="2525" height="1417" />
+    </state>
+    <state x="403" y="145" width="1590" height="1092" key="find.popup/35.23.2525.1417@35.23.2525.1417" timestamp="1606974205175" />
   </component>
 </project>

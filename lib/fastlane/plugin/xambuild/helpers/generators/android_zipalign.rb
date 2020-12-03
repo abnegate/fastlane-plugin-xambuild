@@ -1,12 +1,12 @@
 module Xambuild
-  class AndroidZipalignCommandGenerator
+  class AndroidZipalign
     class << self
       def generate
         parts = prefix
         parts << zipalign_apk
         parts += options
-        parts << Xambuild.cache[:signed_apk_path]
-        parts << Xambuild.cache[:build_apk_path]
+        parts << CsProj.cache[:signed_apk_path]
+        parts << CsProj.cache[:build_apk_path]
         parts += pipe
 
         parts

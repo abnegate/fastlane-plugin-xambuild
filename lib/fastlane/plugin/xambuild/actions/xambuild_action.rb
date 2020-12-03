@@ -1,6 +1,6 @@
 require "fastlane/plugin/xambuild/helpers/options"
-require "fastlane/plugin/xambuild/helpers/platform"
 require "fastlane/plugin/xambuild/helpers/manager"
+require "csproj/platform"
 
 module Fastlane
   module Actions
@@ -11,12 +11,11 @@ module Fastlane
     end
 
     class XambuildAction < Action
-
       def self.run(values)
-        values[:platform] = ::Xambuild::Platform.from_lane_context(Actions.lane_context)
-        ::Xambuild.config = values
+        values[:platform] = ::CsProj::Platform.from_lane_context(Actions.lane_context)
+        ::CsProj.config = values
 
-        if ::Xambuild.project.ios? || ::Xambuild.project.osx?
+        if ::CsProj.project.ios? || ::CsProj.project.osx?
           absolute_ipa_path = File.expand_path(::Xambuild::Manager.new.work(values))
           absolute_app_path = File.join(values[:output_path], "#{values[:assembly_name]}.app")
           absolute_dsym_path = absolute_ipa_path.gsub(".ipa", ".app.dSYM.zip")
@@ -30,10 +29,10 @@ module Fastlane
           ENV[SharedValues::DSYM_OUTPUT_PATH.to_s] = absolute_dsym_path if File.exist?(absolute_dsym_path)
 
           absolute_ipa_path
-        elsif ::Xambuild.project.android?
+        elsif ::CsProj.project.android?
           if values[:keystore_path] && values[:keystore_alias]
             unless values[:keystore_password]
-              ::Xambuild.config[:keystore_password] = ask("Password (for #{values[:keystore_alias]}): ") { |q| q.echo = "*" }
+              ::CsProj.config[:keystore_password] = ask("Password (for #{values[:keystore_alias]}): ") { |q| q.echo = "*" }
             end
           end
           absolute_apk_path = File.expand_path(::Xambuild::Manager.new.work(values))

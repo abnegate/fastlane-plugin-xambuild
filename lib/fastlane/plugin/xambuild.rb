@@ -16,20 +16,6 @@ end
 require "fastlane"
 
 module Xambuild
-  class << self
-    attr_reader :config
-
-    attr_accessor :project
-
-    attr_accessor :cache
-
-    def config=(value)
-      @config = value
-      DetectValues.set_additional_default_values
-      @cache = {}
-    end
-  end
-
   Helper = FastlaneCore::Helper
   UI = FastlaneCore::UI
 end

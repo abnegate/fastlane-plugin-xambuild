@@ -1,5 +1,5 @@
 module Xambuild
-  class ZipDsymCommandGenerator
+  class ZipDsym
     class << self
       def generate
         parts = prefix
@@ -21,7 +21,7 @@ module Xambuild
       end
 
       def options
-        build_dsym_path = Xambuild.cache[:build_dsym_path]
+        build_dsym_path = CsProj.cache[:build_dsym_path]
 
         options = []
         options << "-r"
