@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "nokogiri", "~> 1.7"
-  spec.add_dependency "csproj", "~> 0.1.0"
+  spec.add_dependency "csproj", "~> 0.1.1"
 
   spec.add_development_dependency("bundler")
   spec.add_development_dependency("fastlane", ">= 2.169.0")
