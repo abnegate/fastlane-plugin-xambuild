@@ -2,6 +2,11 @@
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-xambuild) [![Gem Version](https://badge.fury.io/rb/fastlane-plugin-xambuild.svg)](https://badge.fury.io/rb/fastlane-plugin-xambuild)
 
+
+<strong>Like Xambuild?</strong>
+<br />
+<a href="https://www.buymeacoffee.com/abnegate" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 ## Getting Started
 
 This project is a [fastlane](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-xambuild`, add it to your project by running:
